@@ -7,8 +7,7 @@ public class tests {
     void testMethod1() {
         one one = new one(12);
         double y = one.getY();
-        double scale = Math.pow(10, 3);
-        double result = Math.ceil(y * scale) / scale;
+        double result = Math.ceil(y * 1000) / 1000;
         assertEquals(result, 46.084);
     }
     @Test
